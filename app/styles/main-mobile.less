@@ -221,6 +221,7 @@
 
 //            .abs-div-2(all, 0, 0, 581, 771, "box-1-all.m.png");
             .abs-div-2(content, 0, 0, 581, 771, "box-1-content.m.png");
+            .abs-div-2(float-content, 109, 157, 371, 174, "box-1-text.m.png");
 
         }
 
@@ -232,7 +233,7 @@
 
 //            .abs-div-2(all, 0, 0, 581, 816, "box-2-all.m.png");
             .abs-div-2(content, 0, 0, 581, 816, "box-2-content.m.png");
-
+            .abs-div-2(float-content, 80, 193, 417, 198, "box-2-text.m.png");
         }
 
         .box-3{
@@ -243,6 +244,7 @@
 
 //            .abs-div-2(all, 0, 0, 581, 688, "box-3-all.m.png");
             .abs-div-2(content, 0, 0, 581, 688, "box-3-content.m.png");
+            .abs-div-2(float-content, 83, 103, 434, 167, "box-3-text.m.png");
 
         }
 
@@ -252,8 +254,9 @@
             margin-top: 34px;
 
 
-            .abs-div-2(all, 0, 0, 610, 860, "box-4-all.m.png");
+//            .abs-div-2(all, 0, 0, 610, 860, "box-4-all.m.png");
             .abs-div-2(content, 0, 0, 610, 860, "box-4-content.m.png");
+            .abs-div-2(float-content, 97, 198, 412, 232, "box-4-text.m.png");
 
         }
 
@@ -264,34 +267,44 @@
 
             .abs-div-2(content, 0, 0, 581, 798, "box-5-content.m.png");
 
-            .button-1, .button-2{
-                width: 233px;
-                height: 75px;
+            .float-content{
 
-                top:248px;
+                position: absolute;
+                left:0;
+                top:0;
 
-                &:hover{
-                    background-position: bottom;
+                .abs-div-2(text, 59, 200, 467, 30, "box-5-text.m.png");
+
+                .button-1, .button-2{
+                    width: 233px;
+                    height: 75px;
+
+                    top:248px;
+
+                    &:hover{
+                        background-position: bottom;
+                    }
+
+                    &:active{
+                        margin-top: 1px;
+                    }
                 }
 
-                &:active{
-                    margin-top: 1px;
+                .button-1{
+                    .image-bg("box-5-button-1.m.png");
+                    background-position: top;
+
+                    left: 54px;
+
+                }
+
+                .button-2{
+                    .image-bg("box-5-button-2.m.png");
+                    background-position: top;
+                    left: 296px;
                 }
             }
 
-            .button-1{
-                .image-bg("box-5-button-1.m.png");
-                background-position: top;
-
-                left: 54px;
-
-            }
-
-            .button-2{
-                .image-bg("box-5-button-2.m.png");
-                background-position: top;
-                left: 296px;
-            }
 
 
         }

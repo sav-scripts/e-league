@@ -78,7 +78,7 @@
 
     function setupIntro()
     {
-        RadialBackground.init();
+        //RadialBackground.init();
 
         var $container = $doms.sceneContainer.find("#intro"),
             $heroBlue = $container.find(".hero-blue"),
@@ -106,13 +106,13 @@
         introTl.set($heroGreen, {autoAlpha: 0, marginLeft: -600});
         introTl.set(heros, {marginTop: heroTopOffset});
         introTl.set($floatContainer, {autoAlpha:1});
-        introTl.set($background, {autoAlpha:0});
+        //introTl.set($background, {autoAlpha:0});
 
-        introTl.to($heroPink,1,{autoAlpha:1, marginLeft: 0, ease:Back.easeOut.config(3)}, 0);
-        introTl.to($heroGreen,1,{autoAlpha:1, marginLeft: 0, ease:Back.easeOut.config(3)},.2);
+        introTl.to($heroPink,.6,{autoAlpha:1, marginLeft: 0, ease:Back.easeOut.config(3)}, 0);
+        introTl.to($heroGreen,.6,{autoAlpha:1, marginLeft: 0, ease:Back.easeOut.config(3)},.2);
 
-        var blueStart = .8,
-            blueDuration = 1.5;
+        var blueStart = .5,
+            blueDuration = 1.1;
 
         introTl.to($heroBlue, blueDuration, {marginLeft: 0, ease:Elastic.easeOut.config(2, 0.7)}, blueStart);
         introTl.to($heroBlueClone, blueDuration, {marginLeft: 0, ease:Elastic.easeOut.config(2, 0.7)}, blueStart);
@@ -123,16 +123,39 @@
         introTl.to($topic,1, {autoAlpha:1, marginTop: 0, ease:Back.easeInOut.config(5)}, "-=.6");
         introTl.to(heros,1,  {marginTop: 0, ease:Back.easeInOut.config(5)}, "-=1");
 
-        introTl.to($background,.5, {autoAlpha:1, ease:Power1.easeIn}, "-=.5");
+        //introTl.to($background,.5, {autoAlpha:1, ease:Power1.easeIn}, "-=.5");
 
         introTl.to($speedLine,.3, {autoAlpha: 1}, "-=.5");
 
         introTl.add(function()
         {
-            RadialBackground.fadeIn();
-            RadialBackground.startFlash();
+            //RadialBackground.fadeIn();
+            //RadialBackground.startFlash();
 
             self.playBtnToQuestionaire();
+
+
+            var tl5 = new TimelineMax;
+            tl5.to($heroPink,.3, { marginTop: -5, ease:Power1.easeOut});
+
+            var tl = new TimelineMax({repeat:-1});
+            tl.to($heroPink, 1, { marginTop: 25, ease:Power1.easeInOut});
+            tl.to($heroPink, 1, { marginTop: -5, ease:Power1.easeInOut});
+
+            tl5.add(tl);
+
+            var tl2 = new TimelineMax({repeat:-1});
+            tl2.to($heroGreen, 1, { marginTop: 30, ease:Power1.easeInOut});
+            tl2.to($heroGreen, 1, { marginTop: 0, ease:Power1.easeInOut});
+
+            var tl4 = new TimelineMax;
+            tl4.to($heroBlue,.8, { marginTop: 30, ease:Power1.easeOut});
+
+            var tl3 = new TimelineMax({repeat:-1});
+            tl3.to($heroBlue, 1, { marginTop: 0, ease:Power1.easeInOut});
+            tl3.to($heroBlue, 1, { marginTop: 30, ease:Power1.easeInOut});
+
+            tl4.add(tl3);
         });
 
         introTl.pause();

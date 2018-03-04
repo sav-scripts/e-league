@@ -157,7 +157,6 @@ ol.number-order {
   height: 100%;
   background-image: url("../images/intro-background.png");
   background-size: auto;
-  opacity: 0;
 }
 #intro #radial-background {
   position: absolute;
@@ -233,6 +232,13 @@ ol.number-order {
   background-size: auto;
 }
 /* box-container */
+#box-container .float-content {
+  opacity: 0;
+  transition: opacity 0.6s ease-out;
+}
+#box-container .float-content.visible-mode {
+  opacity: 1;
+}
 #box-container .box-1 {
   position: relative;
   width: 1083px;
@@ -253,15 +259,15 @@ ol.number-order {
   background-image: url("../images/box-1-content.png");
   background-size: auto;
 }
-#box-container .box-1 .white-content {
+#box-container .box-1 .float-content {
   position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1083px;
-  height: 488px;
+  left: 486px;
+  top: 170px;
+  width: 409px;
+  height: 192px;
   margin-left: 0px;
   margin-top: 0px;
-  background-image: url("../images/box-1-content.white.png");
+  background-image: url("../images/box-1-text.png");
   background-size: auto;
 }
 #box-container .box-2 {
@@ -284,15 +290,15 @@ ol.number-order {
   background-image: url("../images/box-2-content.png");
   background-size: auto;
 }
-#box-container .box-2 .white-content {
+#box-container .box-2 .float-content {
   position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1106px;
-  height: 602px;
+  left: 63px;
+  top: 248px;
+  width: 417px;
+  height: 198px;
   margin-left: 0px;
   margin-top: 0px;
-  background-image: url("../images/box-2-content.white.png");
+  background-image: url("../images/box-2-text.png");
   background-size: auto;
 }
 #box-container .box-3 {
@@ -315,15 +321,15 @@ ol.number-order {
   background-image: url("../images/box-3-content.png");
   background-size: auto;
 }
-#box-container .box-3 .white-content {
+#box-container .box-3 .float-content {
   position: absolute;
-  left: -24px;
-  top: -99px;
-  width: 1106px;
-  height: 537px;
+  left: 588px;
+  top: 144px;
+  width: 434px;
+  height: 218px;
   margin-left: 0px;
   margin-top: 0px;
-  background-image: url("../images/box-3-content.white.png");
+  background-image: url("../images/box-3-text.png");
   background-size: auto;
 }
 #box-container .box-4 {
@@ -346,6 +352,17 @@ ol.number-order {
   background-image: url("../images/box-4-content.png");
   background-size: auto;
 }
+#box-container .box-4 .float-content {
+  position: absolute;
+  left: 634px;
+  top: 99px;
+  width: 409px;
+  height: 248px;
+  margin-left: 0px;
+  margin-top: 0px;
+  background-image: url("../images/box-4-text.png");
+  background-size: auto;
+}
 #box-container .box-5 {
   position: relative;
   width: 1083px;
@@ -366,29 +383,45 @@ ol.number-order {
   background-image: url("../images/box-5-content.png");
   background-size: auto;
 }
-#box-container .box-5 .button-1,
-#box-container .box-5 .button-2 {
+#box-container .box-5 .float-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#box-container .box-5 .float-content .text {
+  position: absolute;
+  left: 94px;
+  top: 239px;
+  width: 562px;
+  height: 34px;
+  margin-left: 0px;
+  margin-top: 0px;
+  background-image: url("../images/box-5-text.png");
+  background-size: auto;
+}
+#box-container .box-5 .float-content .button-1,
+#box-container .box-5 .float-content .button-2 {
   position: absolute;
   width: 279px;
   height: 88px;
   cursor: pointer;
   top: 292px;
 }
-#box-container .box-5 .button-1:hover,
-#box-container .box-5 .button-2:hover {
+#box-container .box-5 .float-content .button-1:hover,
+#box-container .box-5 .float-content .button-2:hover {
   background-position: bottom;
 }
-#box-container .box-5 .button-1:active,
-#box-container .box-5 .button-2:active {
+#box-container .box-5 .float-content .button-1:active,
+#box-container .box-5 .float-content .button-2:active {
   margin-top: 1px;
 }
-#box-container .box-5 .button-1 {
+#box-container .box-5 .float-content .button-1 {
   background-image: url("../images/box-5-button-1.png");
   background-size: auto;
   background-position: top;
   left: 87px;
 }
-#box-container .box-5 .button-2 {
+#box-container .box-5 .float-content .button-2 {
   background-image: url("../images/box-5-button-2.png");
   background-size: auto;
   background-position: top;
@@ -833,6 +866,17 @@ ol.number-order {
     background-image: url("../images/box-1-content.m.png");
     background-size: auto;
   }
+  #box-container .box-1 .float-content {
+    position: absolute;
+    left: 109px;
+    top: 157px;
+    width: 371px;
+    height: 174px;
+    margin-left: 0px;
+    margin-top: 0px;
+    background-image: url("../images/box-1-text.m.png");
+    background-size: auto;
+  }
   #box-container .box-2 {
     width: 581px;
     height: 816px;
@@ -847,6 +891,17 @@ ol.number-order {
     margin-left: 0px;
     margin-top: 0px;
     background-image: url("../images/box-2-content.m.png");
+    background-size: auto;
+  }
+  #box-container .box-2 .float-content {
+    position: absolute;
+    left: 80px;
+    top: 193px;
+    width: 417px;
+    height: 198px;
+    margin-left: 0px;
+    margin-top: 0px;
+    background-image: url("../images/box-2-text.m.png");
     background-size: auto;
   }
   #box-container .box-3 {
@@ -865,21 +920,21 @@ ol.number-order {
     background-image: url("../images/box-3-content.m.png");
     background-size: auto;
   }
+  #box-container .box-3 .float-content {
+    position: absolute;
+    left: 83px;
+    top: 103px;
+    width: 434px;
+    height: 167px;
+    margin-left: 0px;
+    margin-top: 0px;
+    background-image: url("../images/box-3-text.m.png");
+    background-size: auto;
+  }
   #box-container .box-4 {
     width: 581px;
     height: 860px;
     margin-top: 34px;
-  }
-  #box-container .box-4 .all {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 610px;
-    height: 860px;
-    margin-left: 0px;
-    margin-top: 0px;
-    background-image: url("../images/box-4-all.m.png");
-    background-size: auto;
   }
   #box-container .box-4 .content {
     position: absolute;
@@ -890,6 +945,17 @@ ol.number-order {
     margin-left: 0px;
     margin-top: 0px;
     background-image: url("../images/box-4-content.m.png");
+    background-size: auto;
+  }
+  #box-container .box-4 .float-content {
+    position: absolute;
+    left: 97px;
+    top: 198px;
+    width: 412px;
+    height: 232px;
+    margin-left: 0px;
+    margin-top: 0px;
+    background-image: url("../images/box-4-text.m.png");
     background-size: auto;
   }
   #box-container .box-5 {
@@ -908,27 +974,43 @@ ol.number-order {
     background-image: url("../images/box-5-content.m.png");
     background-size: auto;
   }
-  #box-container .box-5 .button-1,
-  #box-container .box-5 .button-2 {
+  #box-container .box-5 .float-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  #box-container .box-5 .float-content .text {
+    position: absolute;
+    left: 59px;
+    top: 200px;
+    width: 467px;
+    height: 30px;
+    margin-left: 0px;
+    margin-top: 0px;
+    background-image: url("../images/box-5-text.m.png");
+    background-size: auto;
+  }
+  #box-container .box-5 .float-content .button-1,
+  #box-container .box-5 .float-content .button-2 {
     width: 233px;
     height: 75px;
     top: 248px;
   }
-  #box-container .box-5 .button-1:hover,
-  #box-container .box-5 .button-2:hover {
+  #box-container .box-5 .float-content .button-1:hover,
+  #box-container .box-5 .float-content .button-2:hover {
     background-position: bottom;
   }
-  #box-container .box-5 .button-1:active,
-  #box-container .box-5 .button-2:active {
+  #box-container .box-5 .float-content .button-1:active,
+  #box-container .box-5 .float-content .button-2:active {
     margin-top: 1px;
   }
-  #box-container .box-5 .button-1 {
+  #box-container .box-5 .float-content .button-1 {
     background-image: url("../images/box-5-button-1.m.png");
     background-size: auto;
     background-position: top;
     left: 54px;
   }
-  #box-container .box-5 .button-2 {
+  #box-container .box-5 .float-content .button-2 {
     background-image: url("../images/box-5-button-2.m.png");
     background-size: auto;
     background-position: top;

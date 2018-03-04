@@ -36,6 +36,8 @@
 
         self._backgroundTl = setupBackground($container, color, flashColor);
 
+        self._$floatContent = $container.parent().find(".float-content");
+
         //self.startPlay();
     }
 
@@ -46,6 +48,7 @@
         _yOffset: 0,
         _$container: undefined,
         _$graphicContainer: undefined,
+        _$floatContent: undefined,
 
         _isPlaying: false,
 
@@ -58,6 +61,11 @@
             self._isPlaying = true;
 
             self._backgroundTl.restart();
+
+            TweenMax.delayedCall(.5, function()
+            {
+                self._$floatContent.toggleClass("visible-mode", true);
+            });
         },
 
         stopPlay: function()
