@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="styles/main.f08146b85b7e08874967.css">
+
+</head>
+<body onload="Main.init();">
+
+    <!--<div id="layout"></div>-->
+
+    <div id="scene-container">
+
+        <div id="menu">
+
+            <div class="logo"></div>
+
+            <div class="button-container button-group">
+
+                <div class="button"></div>
+                <div class="gap"></div>
+                <div class="button"></div>
+                <div class="gap"></div>
+                <div class="button"></div>
+                <div class="gap"></div>
+                <div class="button"></div>
+                <div class="gap"></div>
+                <div class="button"></div>
+
+            </div>
+
+            <div class="mobile">
+                <div class="trigger"></div>
+
+                <div class="mobile-button-container button-group">
+
+                    <div class="button"><div class="text"></div></div>
+                    <div class="gap"></div>
+                    <div class="button"><div class="text"></div></div>
+                    <div class="gap"></div>
+                    <div class="button"><div class="text"></div></div>
+                    <div class="gap"></div>
+                    <div class="button"><div class="text"></div></div>
+                    <div class="gap"></div>
+                    <div class="button"><div class="text"></div></div>
+                    <div class="gap"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="btn-to-questionaire">
+
+        </div>
+
+        <div id="intro">
+
+            <div class="background"></div>
+
+            <svg id="radial-background" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                 y="0px" width="1200px" height="1200px" viewBox="-600 -600 1200 1200" preserveAspectRatio="none">
+
+                <defs>
+                    <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                        <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:0" ></stop>
+                        <stop offset="90%" style="stop-color:rgb(255,255,255);stop-opacity:1" ></stop>
+                        <stop offset="100%" style="stop-color:rgb(255,255,255);stop-opacity:0" ></stop>
+                    </radialGradient>
+                </defs>
+                <!--<ellipse id="boom-circle" cx="0" cy="0" rx="300" ry="300" fill="url(#grad1)" ></ellipse>-->
+
+            </svg>
+
+            <div class="float-container">
+
+                <div class="speed-line"></div>
+
+                <div class="topic"></div>
+
+                <div class="hero-pink"></div>
+                <div class="hero-green"></div>
+                <div class="hero-blue"></div>
+
+            </div>
+
+        </div>
+
+        <div id="box-container">
+
+            <div class="box-1">
+
+                <svg id="box-1-effects" width="100%" height="100%">
+
+                    <defs>
+
+                        <clipPath id="box-1-mask">
+                            <polygon points="0,0 1083,0 1083,320 0,488"></polygon>
+                        </clipPath>
+
+                        <clipPath id="box-1-mask-mobile">
+                            <polygon points="0,0 581,0 581,674 0,770"></polygon>
+                        </clipPath>
+
+                    </defs>
+
+                    <g clip-path="url(#box-1-mask)" class="graphic-container">
+                        <rect class="bg" width="100%" height="100%" fill="rgba(254, 245, 4, 1)"></rect>
+                    </g>
+
+                </svg>
+
+                <div class="content"></div>
+
+            </div>
+
+            <div class="box-2">
+
+                <svg id="box-2-effects" width="100%" height="100%">
+
+                    <defs>
+
+                        <clipPath id="box-2-mask">
+                            <polygon points="0,171 1083,0 1083,546 0,546"></polygon>
+                        </clipPath>
+
+                        <clipPath id="box-2-mask-mobile">
+                            <polygon points="0,100 581,0 581,790 0,790"></polygon>
+                        </clipPath>
+
+                    </defs>
+
+                    <g clip-path="url(#box-2-mask)" class="graphic-container">
+                        <rect class="bg" width="100%" height="100%" fill="rgba(236, 99, 37, 1)"></rect>
+                    </g>
+
+                </svg>
+
+                <div class="content"></div>
+
+            </div>
+
+            <div class="box-3">
+
+                <svg id="box-3-effects" width="100%" height="100%">
+
+                    <defs>
+
+                        <clipPath id="box-3-mask">
+                            <polygon points="0,0 1081,0 1081,438 0,438"></polygon>
+                        </clipPath>
+
+                        <clipPath id="box-3-mask-mobile">
+                            <polygon points="0,0 581,0 581,686 0,686"></polygon>
+                        </clipPath>
+
+                    </defs>
+
+                    <g clip-path="url(#box-3-mask)" class="graphic-container">
+                        <rect class="bg" width="100%" height="100%" fill="rgba(142, 202, 64, 1)"></rect>
+                    </g>
+
+                </svg>
+
+                <div class="content"></div>
+                <!--<div class="white-content"></div>-->
+
+            </div>
+
+            <div class="box-4">
+
+                <!--<div class="all"></div>-->
+
+                <svg id="box-4-effects" width="100%" height="100%">
+
+                    <defs>
+
+                        <clipPath id="box-4-mask">
+                            <polygon points="0,1 1081,1 1081,551 0,436"></polygon>
+                        </clipPath>
+
+                        <clipPath id="box-4-mask-mobile">
+                            <polygon points="0,0 581,0 581,860 0,755"></polygon>
+                        </clipPath>
+
+                    </defs>
+
+                    <g clip-path="url(#box-4-mask)" class="graphic-container">
+                        <rect class="bg" width="100%" height="100%" fill="rgba(0, 1, 1, 1)"></rect>
+                    </g>
+
+                </svg>
+
+                <div class="content"></div>
+
+            </div>
+
+            <div class="box-5">
+
+                <svg id="box-5-effects" width="100%" height="100%">
+
+                    <defs>
+
+                        <clipPath id="box-5-mask">
+                            <polygon points="0,60 1083,176 1083,512 0,512"></polygon>
+                        </clipPath>
+
+                        <clipPath id="box-5-mask-mobile">
+                            <polygon points="0,0 581,105 581,798 0,798"></polygon>
+                        </clipPath>
+
+                    </defs>
+
+                    <g clip-path="url(#box-5-mask)" class="graphic-container">
+                        <rect class="bg" width="100%" height="100%" fill="rgba(254, 180, 2, 1)"></rect>
+                    </g>
+
+                </svg>
+
+                <div class="content"></div>
+
+
+                <div class="button-1"></div>
+                <div class="button-2"></div>
+
+            </div>
+
+        </div>
+
+        <div id="question-container">
+
+            <div class="group-1 question-group">
+                <div class="title"></div>
+
+                <div class="question-1 question">
+                    <div class="question-part">
+                        <div class="number"></div>
+                        <div class="detail">可以幫誰填問卷？</div>
+                        <div class="arrow"></div>
+                        <div class="bottom"></div>
+                    </div>
+                    <div class="answer-part">
+                        <div class="number"></div>
+                        <div class="detail"><span class="underline">客戶</span>、<span class="underline">親友</span>或是業務員<span class="underline">本人</span>使用「線上開戶App」完成體驗，都可以填寫問卷，一個客戶(ID)限填一份問卷喔！</div>
+                        <div class="bottom"></div>
+                    </div>
+                </div>
+
+                <div class="question-2 question">
+                    <div class="question-part">
+                        <div class="number"></div>
+                        <div class="detail">哪裡可以查詢問卷填寫狀況？</div>
+                        <div class="arrow"></div>
+                        <div class="bottom"></div>
+                    </div>
+                    <div class="answer-part">
+                        <div class="number"></div>
+                        <div class="detail">可直接登入本網站的<a href="http://example.com/問卷平台" target="_blank">問卷平台</a>，或至金控入口網站-管理大師整合行銷績效專區查詢。</div>
+                        <div class="bottom"></div>
+                    </div>
+                </div>
+
+                <div class="question-3 question">
+                    <div class="question-part">
+                        <div class="number"></div>
+                        <div class="detail">為什麼我到問卷平台輸入客戶ID，無法填寫？</div>
+                        <div class="arrow"></div>
+                        <div class="bottom"></div>
+                    </div>
+                    <div class="answer-part">
+                        <div class="number"></div>
+                        <div class="detail">
+                            <ol class="number-order">
+                                <li>客戶須於<span class="blue-text">數位體驗活動開始日(2018/4/2)起</span>，全新體驗使用App並送出申請，才符合資格。</li>
+                                <li>問卷機制<span class="blue-text">以填寫時間為優先</span>，所以可能已被其他業務員填寫過。</li>
+                            </ol>
+                        </div>
+                        <div class="bottom"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="group-2 question-group">
+                <div class="title"></div>
+
+                <div class="question-1 question">
+                    <div class="question-part">
+                        <div class="number"></div>
+                        <div class="detail">請問沒有國泰世華銀行存戶，是否也可以使用線上開戶App?</div>
+                        <div class="arrow"></div>
+                        <div class="bottom"></div>
+                    </div>
+                    <div class="answer-part">
+                        <div class="number"></div>
+                        <div class="detail">
+
+                            不行哦。線上開戶的申請資格如下:
+
+                            <ol class="number-order">
+                                <li>本國年滿20歲之自然人</li>
+                                <li>國泰世華銀行存戶，且於國泰世華銀行留存有效手機號碼</li>
+                                <li>未曾於國泰證券開立帳戶之全新客戶，或曾持有國泰證券帳戶，但已銷戶達三年以上者</li>
+                            </ol>
+
+                        </div>
+                        <div class="bottom"></div>
+                    </div>
+                </div>
+
+                <div class="question-2 question">
+                    <div class="question-part">
+                        <div class="number"></div>
+                        <div class="detail">我已經有KOKO數位存款帳戶，為什麼無法使用線上開戶App？</div>
+                        <div class="arrow"></div>
+                        <div class="bottom"></div>
+                    </div>
+                    <div class="answer-part">
+                        <div class="number"></div>
+                        <div class="detail">抱歉，因為法規的限制，所以如只有國泰世華數位存款帳戶是<span class="blue-text">不適用</span>的!</div>
+                        <div class="bottom"></div>
+                    </div>
+                </div>
+
+                <div class="question-3 question">
+                    <div class="question-part">
+                        <div class="number"></div>
+                        <div class="detail">手機號碼錯了而無法申請開戶，該如何處理？</div>
+                        <div class="arrow"></div>
+                        <div class="bottom"></div>
+                    </div>
+                    <div class="answer-part">
+                        <div class="number"></div>
+                        <div class="detail">
+
+                            <ol class="number-order">
+                                <li>若客戶已是國泰世華網路銀行客戶，請至<a href="http://example.com/網路銀行" target="_blank">網路銀行</a>更新手機號碼，變更完畢後將立即生效。</li>
+                                <li>請客戶撥打國泰世華銀行客服中心02-23831000，或以市話撥打0800-818-001，將有專人服務。</li>
+                            </ol>
+
+                        </div>
+                        <div class="bottom"></div>
+                    </div>
+                </div>
+
+                <div class="question-4 question">
+                    <div class="question-part">
+                        <div class="number"></div>
+                        <div class="detail">客戶在申請時的驗證碼被鎖了，怎麼辦？</div>
+                        <div class="arrow"></div>
+                        <div class="bottom"></div>
+                    </div>
+                    <div class="answer-part">
+                        <div class="number"></div>
+                        <div class="detail">系統當日最多可發送5次驗證碼，若超過次數則當日無法再進行線上開戶，須至隔日（凌晨12時後）始可重新登入申請開戶。</div>
+                        <div class="bottom"></div>
+                    </div>
+                </div>
+
+                <div class="question-5 question">
+                    <div class="question-part">
+                        <div class="number"></div>
+                        <div class="detail">開戶成功後，客戶沒有收到密碼函？</div>
+                        <div class="arrow"></div>
+                        <div class="bottom"></div>
+                    </div>
+                    <div class="answer-part">
+                        <div class="number"></div>
+                        <div class="detail">請客戶登入「線上開戶App」，經OTP簡訊驗證後，即可取得電子交易密碼。</div>
+                        <div class="bottom"></div>
+                    </div>
+                </div>
+
+                <div class="question-6 question">
+                    <div class="question-part">
+                        <div class="number"></div>
+                        <div class="detail">為何同時開立了一個新的銀行戶？</div>
+                        <div class="arrow"></div>
+                        <div class="bottom"></div>
+                    </div>
+                    <div class="answer-part">
+                        <div class="number"></div>
+                        <div class="detail">國泰證券線上開戶App申請流程為一次開立<span class="blue-text">銀行戶</span>+<span class="blue-text">證券戶</span>；<span class="blue-text">銀行戶</span>為買賣股票撥款的專款專用帳戶。</div>
+                        <div class="bottom"></div>
+                    </div>
+                </div>
+
+                <div class="question-7 question">
+                    <div class="question-part">
+                        <div class="number"></div>
+                        <div class="detail">股票交割款該轉帳到哪一個帳戶？</div>
+                        <div class="arrow"></div>
+                        <div class="bottom"></div>
+                    </div>
+                    <div class="answer-part">
+                        <div class="number"></div>
+                        <div class="detail">客戶須於t(買進股票日)+2日早上10:00前，將交割款直接轉入<span class="blue-text">線上開戶開立的銀行帳戶(即開戶成功通知信所附銀行帳號)</span>中。</div>
+                        <div class="bottom"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="bottom-part">
+            <div class="the-end"></div>
+            <div class="text">國泰綜合證券股份有限公司│台北市敦化南路二段333號19樓<span class="show-on-pc">│</span><br class="show-on-mobile"/>客服專線02-7732-6889│www.cathaysec.com.tw│106年金管證總字第0065號</div>
+            <div class="bottom"></div>
+        </div>
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/lib/jquery.1.11.3.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script>window.TweenMax || document.write('<script src="js/lib/TweenMax.min.js"><\/script>')</script>
+
+
+    <script src="js/optimized.aab4f6faeec32bc3b096.js"></script>
+
+</body>
+</html>
